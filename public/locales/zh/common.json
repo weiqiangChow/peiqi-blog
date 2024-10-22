@@ -1,0 +1,136 @@
+{
+  "pages": {
+    "login": {
+      "title": "请登录",
+      "signin": "登录",
+      "signup": "注册",
+      "divider": "or",
+      "fields": {
+        "email": "Email",
+        "password": "密码"
+      },
+      "errors": {
+        "validEmail": "无效的 Email 地址"
+      },
+      "buttons": {
+        "submit": "提交",
+        "forgotPassword": "忘记密码?",
+        "noAccount": "没有账号?",
+        "rememberMe": "记住我"
+      }
+    },
+    "forgotPassword": {
+      "title": "忘记密码?",
+      "fields": {
+        "email": "Email"
+      },
+      "errors": {
+        "validEmail": "无效的 Email 地址"
+      },
+      "buttons": {
+        "submit": "重置"
+      }
+    },
+    "register": {
+      "title": "注册你的账号",
+      "fields": {
+        "email": "Email",
+        "password": "密码"
+      },
+      "errors": {
+        "validEmail": "无效的 Email 地址"
+      },
+      "buttons": {
+        "submit": "注册",
+        "haveAccount": "已经拥有账号?"
+      }
+    },
+    "updatePassword": {
+      "title": "重置密码",
+      "fields": {
+        "password": "新密码",
+        "confirmPassword": "再次确定新密码"
+      },
+      "errors": {
+        "confirmPasswordNotMatch": "密码不匹配"
+      },
+      "buttons": {
+        "submit": "设置新密码"
+      }
+    },
+    "error": {
+      "info": "You may have forgotten to add the {{action}} component to {{resource}} resource.",
+      "404": "Sorry, the page you visited does not exist.",
+      "resource404": "Are you sure you have created the {{resource}} resource.",
+      "backHome": "Back Home"
+    }
+  },
+  "actions": {
+    "list": "List",
+    "create": "Create",
+    "edit": "Edit",
+    "show": "Show"
+  },
+  "buttons": {
+    "create": "创建",
+    "save": "保存",
+    "logout": "登出",
+    "delete": "删除",
+    "edit": "编辑",
+    "cancel": "取消",
+    "confirm": "是否确定此操作??",
+    "filter": "过滤",
+    "clear": "清除",
+    "refresh": "刷新",
+    "show": "显示",
+    "undo": "撤销",
+    "import": "引入",
+    "clone": "复制",
+    "notAccessTitle": "无权访问"
+  },
+  "warnWhenUnsavedChanges": "Are you sure you want to leave? You have unsaved changes.",
+  "notifications": {
+    "success": "Successful",
+    "error": "Error (status code: {{statusCode}})",
+    "undoable": "You have {{seconds}} seconds to undo",
+    "createSuccess": "Successfully created {{resource}}",
+    "createError": "There was an error creating {{resource}} (status code: {{statusCode}})",
+    "deleteSuccess": "Successfully deleted {{resource}}",
+    "deleteError": "Error when deleting {{resource}} (status code: {{statusCode}})",
+    "editSuccess": "Successfully edited {{resource}}",
+    "editError": "Error when editing {{resource}} (status code: {{statusCode}})",
+    "importProgress": "Importing: {{processed}}/{{total}}"
+  },
+  "loading": "Loading",
+  "tags": {
+    "clone": "Clone"
+  },
+  "dashboard": {
+    "title": "Dashboard"
+  },
+  "blog_posts": {
+    "blog_posts": "Blog Posts",
+    "fields": {
+      "id": "Id",
+      "title": "Title",
+      "category": "Category",
+      "status": {
+        "title": "Status",
+        "published": "Published",
+        "draft": "Draft",
+        "rejected": "Rejected"
+      },
+      "content": "Content",
+      "createdAt": "Created At"
+    },
+    "titles": {
+      "create": "Create Post",
+      "edit": "Edit Post",
+      "list": "Posts",
+      "show": "Show Post"
+    }
+  },
+  "table": {
+    "actions": "Actions"
+  }
+}
