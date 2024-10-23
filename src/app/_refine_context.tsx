@@ -1,18 +1,22 @@
 'use client'
+import React, { type PropsWithChildren } from 'react'
 
-import { DevtoolsProvider } from '@providers/devtools'
 import { useNotificationProvider } from '@refinedev/antd'
 import { Refine } from '@refinedev/core'
-import { RefineKbar, RefineKbarProvider } from '@refinedev/kbar'
+import { RefineKbarProvider } from '@refinedev/kbar'
 import routerProvider from '@refinedev/nextjs-router'
-import React, { type PropsWithChildren } from 'react'
+
 import { ColorModeContextProvider } from '@contexts/color-mode'
+
 import { dataProvider } from '@providers/data-provider'
-import { useTranslation } from 'next-i18next'
+import { authProvider } from '@providers/auth-provider'
+
 import { AppstoreOutlined } from '@ant-design/icons'
 
 // initialize i18n
 import '../providers/i18n'
+
+import { useTranslation } from 'next-i18next'
 
 type Props = {
     themeMode?: string
@@ -30,10 +34,10 @@ export const RefineContext = ({ themeMode, children }: PropsWithChildren<Props>)
         <>
             <RefineKbarProvider>
                 <ColorModeContextProvider defaultMode={themeMode}>
-                    {/*<DevtoolsProvider>*/}
                     <Refine
                         routerProvider={routerProvider}
                         dataProvider={dataProvider}
+                        authProvider={authProvider}
                         notificationProvider={useNotificationProvider}
                         i18nProvider={i18nProvider}
                         resources={[
@@ -65,9 +69,7 @@ export const RefineContext = ({ themeMode, children }: PropsWithChildren<Props>)
                             useNewQueryKeys: true,
                         }}>
                         {children}
-                        {/*<RefineKbar />*/}
                     </Refine>
-                    {/*</DevtoolsProvider>*/}
                 </ColorModeContextProvider>
             </RefineKbarProvider>
         </>
